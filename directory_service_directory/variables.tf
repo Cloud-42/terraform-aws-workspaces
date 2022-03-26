@@ -35,5 +35,5 @@ variable "directory_size" {
 variable "directory_edition" {
   type        = string
   description = "The MicrosoftAD edition (Standard or Enterprise). Defaults to Enterprise (applies to MicrosoftAD type only)."
-  default     = null
+  default     = "Standard"
 }
