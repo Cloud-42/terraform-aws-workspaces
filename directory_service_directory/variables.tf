@@ -1,7 +1,18 @@
-variable "vpc_settings" {
-  type        = any
-  description = "VPC settings"
-  default     = []
+variable "vpc_id" {
+  type        = string
+  description = "VPC id"
+  default     = null
+}
+
+variable "subnet_ids" {
+  type        = list(string)
+  description = "VPC id"
+  default     = null
+}
+variable "vpc_info" {
+  type = any
+  description = "vpc_info is required for type = SimpleAD or MicrosoftAD"
+  default = {}
 }
 variable "directory_name" {
   type        = string
@@ -14,7 +25,7 @@ variable "directory_pass" {
 variable "directory_type" {
   type        = string
   description = "The directory type (SimpleAD, ADConnector or MicrosoftAD)"
-  default     = "SimpleAD"
+  default     = "MicrosoftAD"
 }
 variable "directory_size" {
   type        = string
