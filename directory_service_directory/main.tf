@@ -14,21 +14,3 @@ resource "aws_directory_service_directory" "main" {
     }
   }
 }
-
-variable "vpc_info" {
-  type = any
-  default = {}
-}
-
-/*
-variable "vpc_info" {
-  type = object({
-    vpc_id     = string
-    subnet_ids = list(string)
-  })
-  default = ({
-    vpc_id     = null
-    subnet_ids = null
-  })
-}
-*/
