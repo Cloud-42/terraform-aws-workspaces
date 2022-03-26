@@ -1,7 +1,7 @@
 variable "vpc_settings" {
   type        = any
   description = "VPC settings"
-  default     = null
+  default     = []
 }
 variable "directory_name" {
   type        = string
