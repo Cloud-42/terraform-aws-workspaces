@@ -23,7 +23,11 @@ variable "self_service_permissions_switch_running_mode" {
   description = "Whether WorkSpaces directory users can switch the running mode of their workspace."
   default     = false
 }
-variable "subnets" { 
-  type = list(string)
+variable "subnets" {
+  type        = list(string)
   description = "Subnets to use"
+}
+variable "directory_id" {
+  type        = string
+  description = "The directory identifier for registration in WorkSpaces service."
 }

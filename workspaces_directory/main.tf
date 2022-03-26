@@ -1,6 +1,6 @@
 resource "aws_workspaces_directory" "main" {
   depends_on   = [aws_iam_role.main]
-  directory_id = aws_directory_service_directory.main.id
+  directory_id = var.directory_id
 
   subnet_ids = var.subnets
 
