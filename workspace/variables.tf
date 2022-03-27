@@ -43,7 +43,7 @@ variable "workspace_properties_compute_type_name" {
 variable "workspace_properties_user_volume_size_gib" {
 description = "User volume size."
   type        = number
-  default     = 20
+  default     = 10
 }
 
 variable "workspace_properties_root_volume_size_gib" {
