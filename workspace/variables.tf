@@ -28,9 +28,9 @@ variable "user_name" {
 }
 
 variable "bundle_id" {
-  description = "Bundle is."
+  description = "Bundle id."
   type        = string
-  default     = "wsb-bh8rsxt14"
+  default     = "wsb-gk1wpk43z"
 }
 
 variable "workspace_properties_compute_type_name" {
