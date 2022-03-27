@@ -1,3 +1,8 @@
+variable "directory_id" {
+  description = "Directory id."
+  type        = string
+}
+
 variable "root_volume_encryption_enabled" {
   description = "Root volume encryption enabled."
   type        = bool
