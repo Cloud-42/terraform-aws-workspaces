@@ -10,9 +10,9 @@ variable "subnet_ids" {
   default     = null
 }
 variable "vpc_info" {
-  type = any
+  type        = any
   description = "vpc_info is required for type = SimpleAD or MicrosoftAD"
-  default = {}
+  default     = {}
 }
 variable "directory_name" {
   type        = string
