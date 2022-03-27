@@ -40,25 +40,25 @@ variable "workspace_properties_compute_type_name" {
 }
 
 variable "workspace_properties_user_volume_size_gib" {
-description = "User volume size."
+  description = "User volume size."
   type        = number
   default     = 10
 }
 
 variable "workspace_properties_root_volume_size_gib" {
-description = "User volume size."
+  description = "User volume size."
   type        = number
   default     = 80
 }
 
 variable "workspace_properties_running_mode" {
-description = "Workspace running mode.AUTO_STOP or ALWAYS_ON."
+  description = "Workspace running mode.AUTO_STOP or ALWAYS_ON."
   type        = string
   default     = "AUTO_STOP"
 }
 
 variable "workspace_properties_running_mode_auto_stop_timeout_in_minutes" {
-description = "The time after a user logs off when WorkSpaces are automatically stopped. Configured in 60-minute intervals."
+  description = "The time after a user logs off when WorkSpaces are automatically stopped. Configured in 60-minute intervals."
   type        = number
   default     = 120
 }
@@ -67,4 +67,28 @@ variable "tags" {
   description = "Tags map"
   type        = map(string)
   default     = {}
+}
+
+variable "workspace_access_properties_device_type_web" {
+  description = "Whether users can access their WorkSpaces through a web browser."
+  type        = string
+  default     = "ALLOW"
+}
+
+variable "workspace_access_properties_device_type_windows" {
+  description = "Indicates whether users can use Windows clients to access their WorkSpaces.."
+  type        = string
+  default     = "ALLOW"
+}
+
+variable "workspace_access_properties_device_type_linux" {
+  description = "Indicates whether users can use Linux clients to access their WorkSpaces."
+  type        = string
+  default     = "ALLOW"
+}
+
+variable "workspace_access_properties_device_type_osx" {
+  description = "Indicates whether users can use macOS clients to access their WorkSpaces."
+  type        = string
+  default     = "ALLOW"
 }
