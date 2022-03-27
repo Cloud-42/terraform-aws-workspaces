@@ -25,7 +25,6 @@ variable "volume_encryption_key" {
 variable "user_name" {
   description = "Username to grant access."
   type        = string
-  default     = "Administrator"
 }
 
 variable "bundle_id" {
