@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allow manually run
+  workflow_dispatch:
+
+jobs:
+  container:
+    runs-on: ubuntu-latest
+    container: ghcr.io/antonbabenko/pre-commit-terraform:v1.62.3
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+           pre-commit run -a
+        name: pre-commit check
