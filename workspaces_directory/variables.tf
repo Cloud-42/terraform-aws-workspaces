@@ -36,3 +36,23 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+variable "workspace_access_properties_device_type_web" {
+  description = "Indicates whether users can access their WorkSpaces through a web browser."
+  type        = string
+  default     = "DENY"
+}
+variable "workspace_access_properties_device_type_windows" {
+  description = "Indicates whether users can use Windows clients to access their WorkSpaces."
+  type        = string
+  default     = "ALLOW"
+}
+variable "workspace_access_properties_device_type_linux" {
+  description = "Indicates whether users can use Linux clients to access their WorkSpaces."
+  type        = string
+  default     = "ALLOW"
+}
+variable "workspace_access_properties_device_type_osx" {
+  description = "Indicates whether users can use macOS clients to access their WorkSpaces."
+  type        = string
+  default     = "ALLOW"
+}

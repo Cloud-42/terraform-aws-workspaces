@@ -12,10 +12,10 @@ resource "aws_workspaces_directory" "main" {
     switch_running_mode  = var.self_service_permissions_switch_running_mode
   }
   workspace_access_properties {
-    device_type_web        = var.workspace_access_properties_device_type_web
-    device_type_windows    = var.workspace_access_properties_device_type_windows
-    device_type_linux      = var.workspace_access_properties_device_type_linux
-    device_type_osx        = var.workspace_access_properties_device_type_osx
+    device_type_web     = var.workspace_access_properties_device_type_web
+    device_type_windows = var.workspace_access_properties_device_type_windows
+    device_type_linux   = var.workspace_access_properties_device_type_linux
+    device_type_osx     = var.workspace_access_properties_device_type_osx
   }
 
   tags = var.tags
