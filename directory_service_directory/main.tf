@@ -13,4 +13,6 @@ resource "aws_directory_service_directory" "main" {
       subnet_ids = var.vpc_info.subnet_ids
     }
   }
+  
+  tags = var.tags
 }

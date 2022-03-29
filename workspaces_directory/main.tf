@@ -17,4 +17,6 @@ resource "aws_workspaces_directory" "main" {
     device_type_linux      = var.workspace_access_properties_device_type_linux
     device_type_osx        = var.workspace_access_properties_device_type_osx
   }
+
+  tags = var.tags
 }

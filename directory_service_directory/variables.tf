@@ -3,7 +3,6 @@ variable "vpc_id" {
   description = "VPC id"
   default     = null
 }
-
 variable "subnet_ids" {
   type        = list(string)
   description = "VPC id"
@@ -36,4 +35,9 @@ variable "directory_edition" {
   type        = string
   description = "The MicrosoftAD edition (Standard or Enterprise). Defaults to Enterprise (applies to MicrosoftAD type only)."
   default     = "Standard"
+}
+variable "tags" {
+  description = "Tags map"
+  type        = map(string)
+  default     = {}
 }

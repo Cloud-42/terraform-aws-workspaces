@@ -31,3 +31,8 @@ variable "directory_id" {
   type        = string
   description = "The directory identifier for registration in WorkSpaces service."
 }
+variable "tags" {
+  description = "Tags map"
+  type        = map(string)
+  default     = {}
+}
