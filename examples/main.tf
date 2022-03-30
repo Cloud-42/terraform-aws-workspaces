@@ -1,6 +1,6 @@
 module "workspaces_directory_service_directory" {
 
-  source         = "git::https://github.com/Cloud-42/terraform-aws-workspaces.git//directory_service_directory?ref=feature/initial_release"
+  source         = "git::https://github.com/Cloud-42/terraform-aws-workspaces.git//directory_service_directory?ref=v0.1"
   directory_name = "dir.domain.io"
   directory_pass = random_password.workspaces_password.result
 
@@ -12,7 +12,7 @@ module "workspaces_directory_service_directory" {
 
 module "workspaces" {
 
-  source = "git::https://github.com/Cloud-42/terraform-aws-workspaces.git//workspace?ref=feature/initial_release"
+  source = "git::https://github.com/Cloud-42/terraform-aws-workspaces.git//workspace?ref=v0.1"
 
   for_each = {
     for workspace in local.workspaces : workspace.name => workspace
