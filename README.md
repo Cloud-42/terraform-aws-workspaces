@@ -1,4 +1,4 @@
-[![CI](https://github.com/Cloud-42/terraform-aws-workspaces/actions/workflows/actions.yml/badge.svg)](https://github.com/Cloud-42/terraform-aws-jenkins/actions/workflows/actions.yml)
+[![CI](https://github.com/Cloud-42/terraform-aws-workspaces/actions/workflows/actions.yml/badge.svg)](https://github.com/Cloud-42/terraform-aws-workspaces/actions/workflows/actions.yml)
 
 <p align="center">
   <a href="https://www.cloud42.io/" target="_blank" rel="Homepage">
