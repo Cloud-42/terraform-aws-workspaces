@@ -10,3 +10,8 @@
 <p align="center">Need help with your Cloud builds <a href = "mailto: hello@cloud42.io">GET IN TOUCH</a>
 
 ---
+
+### Module to manage AWS workspaces:
+- aws\_directory\_service\_directory
+- aws\_workspaces\_workspace
+- aws\_workspaces\_directory
