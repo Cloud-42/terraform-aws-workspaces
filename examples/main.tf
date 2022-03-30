@@ -1,6 +1,6 @@
 module "workspaces_directory_service_directory" {
 
-  source         = "git::https://github.com/Cloud-42/terraform-aws-workspaces.git//directory_service_directory?ref=v0.1"
+  source         = "git::https://github.com/Cloud-42/terraform-aws-workspaces.git//directory_service_directory?ref=feature/initial_release"
   directory_name = "dir.domain.io"
   directory_pass = random_password.workspaces_password.result
 
@@ -11,8 +11,8 @@ module "workspaces_directory_service_directory" {
 }
 
 module "workspaces" {
-  
-  source = "git::https://github.com/Cloud-42/terraform-aws-workspaces.git//workspace?ref=v0.1"
+
+  source = "git::https://github.com/Cloud-42/terraform-aws-workspaces.git//workspace?ref=feature/initial_release"
 
   for_each = {
     for workspace in local.workspaces : workspace.name => workspace
@@ -34,7 +34,7 @@ resource "random_password" "workspaces_password" {
 }
 
 module "vpc" {
- 
+
   source  = "terraform-aws-modules/vpc/aws"
   version = "2.65.0"
 
@@ -52,7 +52,7 @@ module "vpc" {
 }
 
 module "kms-workspaces" {
-  
+
   source  = "Cloud-42/kms/aws"
   version = "1.3.0"
 
